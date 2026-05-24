@@ -1,13 +1,16 @@
 # Generated from HenryNdubuaku/maths-cs-ai-compendium.
 [project]
 site_name = "Maths, CS & AI Compendium"
-site_url = "https://UyCode.github.io/maths-cs-ai-compendium-zensical/"
+site_url = "https://uycode.github.io/maths-cs-ai-compendium-zensical/"
 site_description = "An open, intuition-first textbook covering mathematics, computer science, and artificial intelligence from the ground up."
 site_author = "Henry Ndubuaku"
 docs_dir = "docs"
 site_dir = "site"
 dev_addr = "localhost:8000"
 use_directory_urls = true
+extra_css = [
+  "stylesheets/extra.css",
+]
 extra_javascript = [
   "javascripts/mathjax.js",
   "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
@@ -159,6 +162,24 @@ nav = [
     { "Brain Machine Interfaces" = "chapter 20 - bleeding edge AI/05. brain machine interfaces.md" }
   ] }
 ]
+
+[project.theme]
+variant = "modern"
+features = [
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.instant.progress",
+  "navigation.tabs",
+  "navigation.tabs.sticky",
+  "navigation.sections",
+  "navigation.expand",
+  "navigation.path",
+  "navigation.top",
+  "toc.follow",
+  "content.code.copy",
+]
+palette.primary = "custom"
+palette.accent = "custom"
 
 [project.markdown_extensions.admonition]
 [project.markdown_extensions.attr_list]

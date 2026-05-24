@@ -1,8 +1,39 @@
+<section class="compendium-hero" markdown>
+<div markdown>
+
 # Maths, CS & AI Compendium
 
-<img src="images/logo.png" alt="Logo" style="border-radius: 30px; width: 100%;">
+An intuition-first map through mathematics, computer science, and artificial intelligence. Start with vectors and calculus, then keep moving into machine learning, systems, inference, robotics, and the edge of applied AI.
+{ .lead }
 
-**Read online**: [henryndubuaku.github.io/maths-cs-ai-compendium](https://henryndubuaku.github.io/maths-cs-ai-compendium/)
+<div class="hero-actions" markdown>
+
+[Start With Vectors](chapter%2001%20-%20vectors/01.%20vector%20spaces.md){ .md-button .md-button--primary }
+[Browse The Map](#learning-map){ .md-button }
+[Original GitHub](https://github.com/HenryNdubuaku/maths-cs-ai-compendium){ .md-button }
+
+</div>
+</div>
+
+<aside class="hero-panel" markdown>
+
+<img src="images/logo.png" alt="Maths, CS and AI Compendium logo">
+
+<div class="hero-stat-grid">
+  <div class="hero-stat"><strong>20</strong><span>chapters</span></div>
+  <div class="hero-stat"><strong>100+</strong><span>lessons</span></div>
+  <div class="hero-stat"><strong>260+</strong><span>diagrams</span></div>
+</div>
+
+</aside>
+</section>
+
+<div class="home-strip">
+  <a href="chapter%2001%20-%20vectors/01.%20vector%20spaces.md"><strong>Mathematical Core</strong><span>Vectors, matrices, calculus, statistics, probability.</span></a>
+  <a href="chapter%2006%20-%20machine%20learning/01.%20classical%20machine%20learning.md"><strong>AI Foundations</strong><span>Classical ML, deep learning, reinforcement learning, NLP, vision.</span></a>
+  <a href="chapter%2015%20-%20production%20software%20engineering/01.%20linux%20and%20CMD.md"><strong>Systems Practice</strong><span>Software engineering, GPU programming, inference, cloud systems.</span></a>
+  <a href="chapter%2019%20-%20applied%20AI/01.%20AI%20for%20finance.md"><strong>Applied Frontier</strong><span>Finance, healthcare, proteins, agents, quantum and neuromorphic AI.</span></a>
+</div>
 
 ## Overview
 Most textbooks bury good ideas under dense notation, skip the intuition, assume you already know half the material, and quickly get outdated in fast-moving fields like AI. This is an open, unconventional textbook covering maths, computing, and artificial intelligence from the ground up. Written for curious practitioners looking to deeply understand the stuff, not just survive an exam/interview. 
@@ -13,7 +44,27 @@ Over the past years working in AI/ML, I filled notebooks with intuition first, r
 ## MCP Server
 This repo includes an MCP server that lets any AI assistant (Claude Code, Cursor, VS Code, etc.) use the compendium as a knowledge base. It requires a local clone of the repo. Comes with tools for educational purposes and example implementations.
 
-## Outline 
+## Learning Map
+
+<div class="grid cards home-pathways" markdown>
+
+- __Maths spine__  
+  [Vectors](chapter%2001%20-%20vectors/01.%20vector%20spaces.md), [Matrices](chapter%2002%20-%20matrices/01.%20matrix%20properties.md), [Calculus](chapter%2003%20-%20calculus/01.%20differential%20calculus.md), [Statistics](chapter%2004%20-%20statistics/01.%20fundamentals.md), and [Probability](chapter%2005%20-%20probability/01.%20counting.md).
+
+- __Model building__  
+  [Machine Learning](chapter%2006%20-%20machine%20learning/01.%20classical%20machine%20learning.md), [Computational Linguistics](chapter%2007%20-%20computational%20linguistics/01.%20linguistic%20foundations.md), [Computer Vision](chapter%2008%20-%20computer%20vision/01.%20image%20fundamentals.md), and [Audio & Speech](chapter%2009%20-%20audio%20and%20speech/01.%20digital%20signal%20processing.md).
+
+- __Modern architectures__  
+  [Multimodal Learning](chapter%2010%20-%20multimodal%20learning/01.%20multimodal%20representations.md), [Autonomous Systems](chapter%2011%20-%20autonomous%20systems/01.%20perception.md), and [Graph Neural Networks](chapter%2012%20-%20graph%20neural%20networks/01.%20geometric%20deep%20learning.md).
+
+- __Production systems__  
+  [Computing & OS](chapter%2013%20-%20computing%20and%20OS/01.%20discrete%20maths.md), [Data Structures & Algorithms](chapter%2014%20-%20data%20structures%20and%20algorithms/00.%20foundations.md), [Software Engineering](chapter%2015%20-%20production%20software%20engineering/01.%20linux%20and%20CMD.md), [GPU Programming](chapter%2016%20-%20SIMD%20and%20GPU%20programming/00.%20why%20C++%20and%20how%20ML%20frameworks%20work.md), [AI Inference](chapter%2017%20-%20AI%20inference/01.%20quantisation.md), and [ML Systems Design](chapter%2018%20-%20ML%20systems%20design/01.%20systems%20design%20fundamentals.md).
+
+</div>
+
+## Full Outline 
+
+<div class="chapter-table" markdown>
 
 | # | Chapter | Summary | Status |
 |---|---------|---------|--------|
@@ -37,6 +88,8 @@ This repo includes an MCP server that lets any AI assistant (Claude Code, Cursor
 | 18 | [ML Systems Design](chapter%2018%20-%20ML%20systems%20design/01.%20systems%20design%20fundamentals.md) | systems fundamentals, cloud computing, distributed systems, ML lifecycle, feature stores, A/B testing, recommendation/search/ads/fraud design examples | Available |
 | 19 | Applied AI | Ai in finance, healthcare, protein, drug discovery | Coming |
 | 20 | Bleeding Edge AI | quantum ML, neuromorphic ML, decentralised AI, datacenters in space, brain machine interfaces | Coming |
+
+</div>
 
 ## Foreword
 
