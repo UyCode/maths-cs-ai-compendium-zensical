@@ -62,10 +62,9 @@ This repo includes an MCP server that lets any AI assistant (Claude Code, Cursor
 
 </div>
 
-## Full Outline 
+## Full Outline
 
 <div class="chapter-table" markdown>
-
 | # | Chapter | Summary | Status |
 |---|---------|---------|--------|
 | 01 | [Vectors](chapter%2001%20-%20vectors/01.%20vector%20spaces.md) | Spaces, magnitude, direction, norms, metrics, dot/cross/outer products, basis, duality | Available |

@@ -441,19 +441,48 @@ const rewriteMarkdown = (content, currentPath) =>
       `${prefix}${rewriteLinkTarget(target.trim(), currentPath)}${suffix}`,
     );
 
+const normalizeMathBlocks = (content) =>
+  content
+    .replace(/^[ \t]*(```|~~~)math[^\r\n]*\r?\n([\s\S]*?)^[ \t]*\1[ \t]*$/gm, (_, _fence, body) => {
+      const math = body.replace(/\s+$/, "");
+      return `$$\n${math}\n$$`;
+    })
+    .replace(/^(?![ \t]*[-*+]\s)([ \t]*)\$\$([^\r\n]+?)\$\$[ \t]*$/gm, "$1$$$$\n$2\n$1$$$$\n")
+    .replace(/^([ \t]*\$\$[ \t]*)(\r?\n)(?=[ \t]*\$\$)/gm, "$1$2$2");
+
 const escapeReferenceLikeExamples = (content) => {
   let inFence = false;
+  let fenceMarker = "";
+  let inDisplayMath = false;
 
   return content
     .split(/\r?\n/)
     .map((line) => {
-      if (/^\s*(```|~~~)/.test(line)) {
-        inFence = !inFence;
+      const fenceMatch = line.match(/^\s*(```+|~~~+)/);
+      if (fenceMatch) {
+        const marker = fenceMatch[1];
+        if (!inFence) {
+          inFence = true;
+          fenceMarker = marker;
+        } else if (marker.startsWith(fenceMarker[0])) {
+          inFence = false;
+          fenceMarker = "";
+        }
         return line;
       }
       if (inFence) return line;
 
-      const segments = line.split(/(`[^`]*`|\$[^$]*\$)/g);
+      const displayMathDelimiterCount = (line.match(/\$\$/g) ?? []).length;
+      if (inDisplayMath) {
+        if (displayMathDelimiterCount % 2 === 1) inDisplayMath = false;
+        return line;
+      }
+      if (/^\s*\$\$/.test(line) && displayMathDelimiterCount % 2 === 1) {
+        inDisplayMath = true;
+        return line;
+      }
+
+      const segments = line.split(/(`[^`]*`|\$\$[^$]*\$\$|\$[^$\n]*\$)/g);
       return segments
         .map((segment, index) => {
           if (index % 2 === 1) return segment;
@@ -474,9 +503,10 @@ for (const [sourcePath, targetPath] of pathMap) {
   const fullPath = join(docsDir, ...targetPath.split("/"));
   const markdown = readFileSync(fullPath, "utf8");
   const rewritten = rewriteMarkdown(markdown, targetPath);
+  const normalized = targetPath.endsWith(".md") ? normalizeMathBlocks(rewritten) : rewritten;
   writeFileSync(
     fullPath,
-    targetPath.endsWith(".md") ? escapeReferenceLikeExamples(rewritten) : rewritten,
+    targetPath.endsWith(".md") ? escapeReferenceLikeExamples(normalized) : normalized,
     "utf8",
   );
 }
@@ -486,13 +516,14 @@ let homepage = readFileSync(homepagePath, "utf8");
 homepage = homepage
   .replace(
     /^# Maths, CS & AI Compendium\r?\n\r?\n<img src="images\/logo\.png"[^>]*>\r?\n\r?\n\*\*Read online\*\*: \[henryndubuaku\.github\.io\/maths-cs-ai-compendium]\(https:\/\/henryndubuaku\.github\.io\/maths-cs-ai-compendium\/\)\r?\n/,
-    `${customHomepageLead}\n`,
+    customHomepageLead,
   )
-  .replace("## Outline", learningMap);
+  .replace(/## Outline[ \t]*/, learningMap);
 homepage = homepage.replace(
   /(\| 20 \| Bleeding Edge AI \| quantum ML, neuromorphic ML, decentralised AI, datacenters in space, brain machine interfaces \| Coming \|\r?\n)/,
   "$1\n</div>\n",
 );
+homepage = homepage.replace(/(<div class="chapter-table" markdown>\r?\n)(?:\r?\n)+(?=\| # \| Chapter \|)/, "$1");
 writeFileSync(homepagePath, homepage, "utf8");
 
 mkdirSync(join(docsDir, "stylesheets"), { recursive: true });
@@ -613,7 +644,6 @@ custom_fences = [
 ]
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true
-
 `;
 
 writeFileSync("zensical.toml", zensicalToml, "utf8");
