@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Zensical generated output
+.cache/
+site/
+build-output.txt
+serve-output.txt
+serve-error.txt

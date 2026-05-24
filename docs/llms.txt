@@ -1,0 +1,156 @@
+# Maths, CS & AI Compendium
+
+> An open, intuition-first textbook covering mathematics, computer science, and artificial intelligence from the ground up. Written for curious practitioners, not exam survivors.
+
+## About
+- Author: Henry Ndubuaku
+- Repository: https://github.com/HenryNdubuaku/maths-cs-ai-compendium
+- Website: https://henryndubuaku.github.io/maths-cs-ai-compendium/
+- License: Open source educational resource
+- Audience: AI/ML engineers, researchers, and students who want deep understanding
+
+## Chapters
+
+### Chapter 1: Vectors
+- [Vector Spaces](chapter%2001%20-%20vectors/01.%20vector%20spaces.md): Vector spaces, dimensions, subspaces, closure properties, and their role as the foundation of ML
+- [Vector Properties](chapter%2001%20-%20vectors/02.%20vector%20properties.md): Magnitude, direction, parallelism, orthogonality, linear independence, sparsity, unit vectors
+- [Norms and Metrics](chapter%2001%20-%20vectors/03.%20norms%20and%20metrics.md): L1, L2, Lp, infinity norms, distance metrics, cosine similarity
+- [Products](chapter%2001%20-%20vectors/04.%20products.md): Dot product, cross product, outer product, triple products, cosine similarity
+- [Basis and Duality](chapter%2001%20-%20vectors/05.%20basis%20and%20duality.md): Basis vectors, change of basis, dual spaces, covectors
+
+### Chapter 2: Matrices
+- [Matrix Properties](chapter%2002%20-%20matrices/01.%20matrix%20properties.md): Transpose, trace, rank, determinant, inverse, condition number, norms, positive definiteness
+- [Matrix Types](chapter%2002%20-%20matrices/02.%20matrix%20types.md): Identity, diagonal, symmetric, orthogonal, sparse, Toeplitz, circulant, Hermitian, permutation
+- [Operations](chapter%2002%20-%20matrices/03.%20operations.md): Matrix multiplication, Hadamard product, outer product, systems of equations, pseudo-inverse
+- [Linear Transformations](chapter%2002%20-%20matrices/04.%20linear%20transformations.md): Rotation, reflection, scaling, shearing, affine transforms, homogeneous coordinates
+- [Decompositions](chapter%2002%20-%20matrices/05.%20decompositions.md): Gaussian elimination, LU, Cholesky, eigendecomposition, QR, SVD, PCA, NMF
+
+### Chapter 3: Calculus
+- [Differential Calculus](chapter%2003%20-%20calculus/01.%20differential%20calculus.md): Limits, derivatives, chain rule, differentiation rules, L'Hopital's rule
+- [Integral Calculus](chapter%2003%20-%20calculus/02.%20integral%20calculus.md): Definite and indefinite integrals, fundamental theorem, u-substitution, integration by parts
+- [Multivariate Calculus](chapter%2003%20-%20calculus/03.%20multivariate%20calculus.md): Partial derivatives, gradients, Jacobians, Hessians, directional derivatives
+- [Function Approximation](chapter%2003%20-%20calculus/04.%20function%20approximation.md): Taylor series, Maclaurin series, Fourier series, polynomial approximation
+- [Optimisation](chapter%2003%20-%20calculus/05.%20optimisation.md): Critical points, convexity, Newton's method, gradient descent, Lagrange multipliers, KKT
+
+### Chapter 4: Statistics
+- [Fundamentals](chapter%2004%20-%20statistics/01.%20fundamentals.md): Random variables, distributions, expectation, moments, variance
+- [Measures](chapter%2004%20-%20statistics/02.%20measures.md): Dispersion, quartiles, z-scores, correlation, outlier detection
+- [Sampling](chapter%2004%20-%20statistics/03.%20sampling.md): Sampling methods, central limit theorem, bootstrap
+- [Hypothesis Testing](chapter%2004%20-%20statistics/04.%20hypothesis%20testing.md): t-tests, p-values, confidence intervals, ANOVA
+- [Inference](chapter%2004%20-%20statistics/05.%20inference.md): Statistical inference, MLE, MAP estimation
+
+### Chapter 5: Probability
+- [Counting](chapter%2005%20-%20probability/01.%20counting.md): Permutations, combinations, factorial, multinomial, inclusion-exclusion
+- [Probability Concepts](chapter%2005%20-%20probability/02.%20probability%20concepts.md): Axioms, conditional probability, Bayes theorem, independence
+- [Distributions](chapter%2005%20-%20probability/03.%20distributions.md): Bernoulli, binomial, Poisson, Gaussian, exponential, beta, Dirichlet
+- [Bayesian Methods](chapter%2005%20-%20probability/04.%20bayesian.md): Prior, posterior, likelihood, conjugate priors, MCMC
+- [Information Theory](chapter%2005%20-%20probability/05.%20information%20theory.md): Entropy, cross-entropy, KL divergence, mutual information
+
+### Chapter 6: Machine Learning
+- [Classical ML](chapter%2006%20-%20machine%20learning/01.%20classical%20machine%20learning.md): Naive Bayes, decision trees, random forests, SVM, K-means, GMM
+- [Gradient ML](chapter%2006%20-%20machine%20learning/02.%20gradient%20machine%20learning.md): Linear/logistic regression, SGD, Adam, loss functions, regularisation, evaluation
+- [Deep Learning](chapter%2006%20-%20machine%20learning/03.%20deep%20learning.md): MLPs, CNNs, RNNs, LSTMs, attention, transformers, ViT, autoencoders, VAEs
+- [Reinforcement Learning](chapter%2006%20-%20machine%20learning/04.%20reinforcement%20learning.md): MDPs, Q-learning, policy gradient, actor-critic, PPO, RLHF, DPO
+- [Distributed Training](chapter%2006%20-%20machine%20learning/05.%20distributed%20deep%20learning.md): Data/model/pipeline/tensor parallelism, mixed precision, scaling laws, MoE
+
+### Chapter 7: Computational Linguistics
+- [Linguistic Foundations](chapter%2007%20-%20computational%20linguistics/01.%20linguistic%20foundations.md): Morphology, syntax, semantics, pragmatics, phonology
+- [Text Processing](chapter%2007%20-%20computational%20linguistics/02.%20text%20processing%20and%20classic%20NLP.md): Tokenisation, TF-IDF, n-grams, NER, POS tagging
+- [Embeddings and Sequence Models](chapter%2007%20-%20computational%20linguistics/03.%20embeddings%20and%20sequence%20models.md): Word2Vec, GloVe, RNNs, LSTMs, seq2seq
+- [Transformers and LMs](chapter%2007%20-%20computational%20linguistics/04.%20transformers%20and%20language%20models.md): Self-attention, BERT, GPT, T5, positional encoding
+- [Advanced Text Generation](chapter%2007%20-%20computational%20linguistics/05.%20advanced%20text%20generation.md): MoE, SSMs, Mamba, GQA, MLA, modern LLM architectures, text diffusion
+
+### Chapter 8: Computer Vision
+- [Image Fundamentals](chapter%2008%20-%20computer%20vision/01.%20image%20fundamentals.md): Pixels, colour spaces, filtering, edge detection, SIFT, feature extraction
+- [Convolutional Networks](chapter%2008%20-%20computer%20vision/02.%20convolutional%20networks.md): Convolution, pooling, LeNet, AlexNet, VGG, ResNet, EfficientNet, MobileNet
+- [Detection and Segmentation](chapter%2008%20-%20computer%20vision/03.%20object%20detection%20and%20segmentation.md): YOLO, SSD, Faster R-CNN, RetinaNet, U-Net, Mask R-CNN, panoptic
+- [Vision Transformers and Generation](chapter%2008%20-%20computer%20vision/04.%20vision%20transformers%20and%20generation.md): ViT, DeiT, Swin, DINO, MAE, GANs, diffusion, flow matching
+- [Video and 3D Vision](chapter%2008%20-%20computer%20vision/05.%20video%20and%203D%20vision.md): Optical flow, SlowFast, tracking, stereo depth, NeRF, 3D Gaussian Splatting, SLAM
+
+### Chapter 9: Audio & Speech
+- [Digital Signal Processing](chapter%2009%20-%20audio%20and%20speech/01.%20digital%20signal%20processing.md): Waveforms, sampling, Fourier transform, spectrograms, MFCCs
+- [Automatic Speech Recognition](chapter%2009%20-%20audio%20and%20speech/02.%20automatic%20speech%20recognition.md): CTC, RNN-T, Conformer, Whisper, wav2vec
+- [Text to Speech](chapter%2009%20-%20audio%20and%20speech/03.%20text%20to%20speech%20and%20voice.md): WaveNet, Tacotron, VITS, voice conversion
+- [Speaker and Audio Analysis](chapter%2009%20-%20audio%20and%20speech/04.%20speaker%20and%20audio%20analysis.md): Speaker recognition, diarisation, VAD
+- [Source Separation](chapter%2009%20-%20audio%20and%20speech/05.%20source%20separation%20and%20noise.md): Conv-TasNet, active noise cancellation
+
+### Chapter 10: Multimodal Learning
+- [Multimodal Representations](chapter%2010%20-%20multimodal%20learning/01.%20multimodal%20representations.md): Fusion strategies, CLIP, ALIGN, SigLIP, contrastive learning, InfoNCE
+- [Vision Language Models](chapter%2010%20-%20multimodal%20learning/02.%20vision%20language%20models.md): VQA, Flamingo, LLaVA, PaLI, grounding, document understanding
+- [Image and Video Tokenisation](chapter%2010%20-%20multimodal%20learning/03.%20image%20and%20video%20tokenisation.md): VQ-VAE, VQ-GAN, residual quantisation, video tokenisers
+- [Cross-Modal Generation](chapter%2010%20-%20multimodal%20learning/04.%20cross-modal%20generation.md): DALL-E, Stable Diffusion, Imagen, text-to-video, text-to-audio
+- [Unified Architectures](chapter%2010%20-%20multimodal%20learning/05.%20unified%20multimodal%20architectures.md): Gemini, GPT-4o, multimodal agents, world models
+
+### Chapter 11: Autonomous Systems
+- [Perception](chapter%2011%20-%20autonomous%20systems/01.%20perception.md): Sensors, sensor fusion, BEVFusion, 3D detection, depth estimation, occupancy networks
+- [Robot Learning](chapter%2011%20-%20autonomous%20systems/02.%20robot%20learning.md): Kinematics, dynamics, PID/MPC/impedance control, imitation learning, sim-to-real, world models
+- [Vision-Language-Action Models](chapter%2011%20-%20autonomous%20systems/03.%20vision-language-action%20models.md): VLAs, RT-2, Octo, OpenVLA, Pi-0, action tokenisation
+- [Self-Driving](chapter%2011%20-%20autonomous%20systems/04.%20self-driving.md): Driving stack, motion prediction, planning, end-to-end driving, world models, safety, SAE levels
+- [Space and Extreme Robotics](chapter%2011%20-%20autonomous%20systems/05.%20space%20and%20extreme%20robotics.md): Planetary rovers, communication constraints, underwater, swarm robotics, HRI
+
+### Chapter 12: Graph Neural Networks
+- [Geometric Deep Learning](chapter%2012%20-%20graph%20neural%20networks/01.%20geometric%20deep%20learning.md): Symmetry groups, invariance, equivariance, five geometric domains
+- [Graph Theory](chapter%2012%20-%20graph%20neural%20networks/02.%20graph%20theory.md): Adjacency, Laplacian, spectral theory, community detection
+- [Graph Neural Networks](chapter%2012%20-%20graph%20neural%20networks/03.%20graph%20neural%20networks.md): Message passing, GCN, GraphSAGE, GIN, over-smoothing, heterogeneous graphs, link prediction
+- [Graph Attention Networks](chapter%2012%20-%20graph%20neural%20networks/04.%20graph%20attention%20networks.md): GAT, GATv2, Graph Transformers, Graphormer, GPS, temporal graphs
+- [3D Graph Networks](chapter%2012%20-%20graph%20neural%20networks/05.%203d%20graph%20networks.md): SE(3)-equivariance, SchNet, DimeNet, EGNN, MACE, graph generation, drug discovery
+
+### Chapter 13: Computing and OS
+- [Discrete Maths](chapter%2013%20-%20computing%20and%20OS/01.%20discrete%20maths.md): Logic, proofs, sets, relations, functions, graph theory, recurrences, computability, P vs NP
+- [Computer Architecture](chapter%2013%20-%20computing%20and%20OS/02.%20computer%20architecture.md): Number systems, IEEE 754, logic gates, CPU, ISAs, pipelining, memory hierarchy, virtual memory, I/O, DMA
+- [Operating Systems](chapter%2013%20-%20computing%20and%20OS/03.%20operating%20systems.md): Processes, threads, scheduling, memory management, file systems, networking, containers, security
+- [Concurrency and Parallelism](chapter%2013%20-%20computing%20and%20OS/04.%20concurrency%20and%20parallelism.md): Synchronisation, deadlock, lock-free, OpenMP, MPI, async/await, Amdahl's law
+- [Programming Languages](chapter%2013%20-%20computing%20and%20OS/05.%20programming%20languages.md): Paradigms, type systems, memory management, compilation, JIT, closures, pattern matching
+
+### Chapter 14: Data Structures and Algorithms
+- [Foundations](chapter%2014%20-%20data%20structures%20and%20algorithms/00.%20foundations.md): Big O notation, recursion, backtracking, dynamic programming, pattern recognition for interviews
+- [Arrays and Hashing](chapter%2014%20-%20data%20structures%20and%20algorithms/01.%20arrays%20and%20hashing.md): Arrays, hash tables, two pointers, sliding window, prefix sums (with NeetCode problems)
+- [Linked Lists, Stacks, and Queues](chapter%2014%20-%20data%20structures%20and%20algorithms/02.%20linked%20lists,%20stacks,%20and%20queues.md): Fast/slow pointers, monotonic stack, heaps (with NeetCode problems)
+- [Trees](chapter%2014%20-%20data%20structures%20and%20algorithms/03.%20trees.md): BSTs, tries, Union-Find, segment/Fenwick trees (with NeetCode problems)
+- [Graphs](chapter%2014%20-%20data%20structures%20and%20algorithms/04.%20graphs.md): BFS, DFS, Dijkstra, topological sort, SCCs (with NeetCode problems)
+- [Sorting and Search](chapter%2014%20-%20data%20structures%20and%20algorithms/05.%20sorting%20and%20search.md): Merge/quick sort, binary search, greedy, DP, backtracking (with NeetCode problems)
+
+### Chapter 15: Production Software Engineering
+- [Linux and CMD](chapter%2015%20-%20production%20software%20engineering/01.%20linux%20and%20CMD.md): Shell, file system, permissions, processes, SSH, essential ML commands
+- [Git and Version Control](chapter%2015%20-%20production%20software%20engineering/02.%20git%20and%20repository%20management.md): Branching, merging, PRs, git for ML, experiment tracking
+- [Codebase Design](chapter%2015%20-%20production%20software%20engineering/03.%20codebase%20design.md): Project structure, clean code, design patterns, config management, API design, AI coding agents
+- [Testing and QA](chapter%2015%20-%20production%20software%20engineering/04.%20testing%20and%20quality%20assurance.md): pytest, mocking, testing ML code, CI/CD, linting, code review
+- [Deployment and DevOps](chapter%2015%20-%20production%20software%20engineering/05.%20deployment%20and%20devops.md): Docker, model serving, experiment tracking, reproducibility, monitoring, feature stores, orchestration
+
+### Chapter 16: SIMD and GPU Programming
+- [Why C++ and How ML Frameworks Work](chapter%2016%20-%20SIMD%20and%20GPU%20programming/00.%20why%20C++%20and%20how%20ML%20frameworks%20work.md): Python/C++ architecture, NumPy/PyTorch/JAX internals, C++ fundamentals, pybind11
+- [Hardware Fundamentals](chapter%2016%20-%20SIMD%20and%20GPU%20programming/01.%20hardware%20fundamentals.md): Moore's law, SIMD concept, roofline model, chip architectures
+- [ARM and NEON](chapter%2016%20-%20SIMD%20and%20GPU%20programming/02.%20ARM%20and%20NEON.md): NEON intrinsics, I8MM, SME2, SVE, Apple Silicon, auto-vectorisation, Cactus engine
+- [x86 and AVX](chapter%2016%20-%20SIMD%20and%20GPU%20programming/03.%20x86%20and%20AVX.md): AVX2/AVX-512/AMX intrinsics, alignment, profiling
+- [GPU Architecture and CUDA](chapter%2016%20-%20SIMD%20and%20GPU%20programming/04.%20GPU%20architecture%20and%20CUDA.md): GPU design, CUDA C++, warps, shared memory tiling, advanced optimisations, GPU generations
+- [Triton, TPUs, and Pallas](chapter%2016%20-%20SIMD%20and%20GPU%20programming/05.%20triton,%20TPUs%20and%20pallax.md): Triton kernels, Flash Attention, TPU architecture, JAX/Pallas
+- [RISC-V and Embedded Systems](chapter%2016%20-%20SIMD%20and%20GPU%20programming/06.%20RISC-V%20and%20embedded%20systems.md): RISC-V V extension, TinyML, TFLM, edge deployment constraints
+- [Vulkan Compute](chapter%2016%20-%20SIMD%20and%20GPU%20programming/07.%20vulkan%20compute%20and%20cross-platform%20GPU.md): Vulkan pipeline, GLSL compute shaders, Kompute, WebGPU
+
+### Chapter 17: AI Inference
+- [Quantisation](chapter%2017%20-%20AI%20inference/01.%20quantisation.md): PTQ, QAT, GPTQ, AWQ, QuIP#, HQQ, AQLM, BitNet, FP8, MX formats, KV-cache quantisation
+- [Efficient Architectures](chapter%2017%20-%20AI%20inference/02.%20efficient%20architectures.md): StreamingLLM, sparse/linear attention, MQA/GQA/MLA, Mamba, Flash Attention, Ring Attention, pruning
+- [Serving and Batching](chapter%2017%20-%20AI%20inference/03.%20serving%20and%20batching.md): Prefill vs decode, continuous batching, PagedAttention/vLLM, constrained generation, request routing
+- [Edge Inference](chapter%2017%20-%20AI%20inference/04.%20edge%20inference.md): On-device runtimes, compiler stack, NPUs, on-device LLMs, federated learning, Cactus engine
+- [Scaling and Deployment](chapter%2017%20-%20AI%20inference/05.%20scaling%20and%20deployment.md): Tensor/pipeline parallelism, speculative decoding, prefix caching, KV-cache eviction, inference frameworks, cost optimisation
+
+### Chapter 18: ML Systems Design
+- [Systems Design Fundamentals](chapter%2018%20-%20ML%20systems%20design/01.%20systems%20design%20fundamentals.md): Client-server, networking, DNS, load balancing, caching, databases, CAP theorem, message queues, API design
+- [Cloud Computing](chapter%2018%20-%20ML%20systems%20design/02.%20cloud%20computing.md): IaaS/PaaS/SaaS, Kubernetes, storage, networking, serverless, cost management, multi-region, IaC
+- [Large Scale Infrastructure](chapter%2018%20-%20ML%20systems%20design/03.%20large%20scale%20infrastructure.md): Distributed systems, microservices, data pipelines, GPU clusters, InfiniBand, fault tolerance, vector search, observability
+- [ML Systems Design](chapter%2018%20-%20ML%20systems%20design/04.%20ML%20systems%20design.md): ML lifecycle, data management, feature stores, A/B testing, feedback loops, fairness, monitoring
+- [ML Design Examples](chapter%2018%20-%20ML%20systems%20design/05.%20ML%20design%20examples.md): Recommendation systems, search ranking, ads, fraud detection, content moderation, RAG chatbot, image search
+
+### Chapter 19: Applied AI
+- [AI for Finance](chapter%2019%20-%20applied%20AI/01.%20AI%20for%20finance.md): Time series, algorithmic trading, portfolio optimisation, risk modelling
+- [Protein Design](chapter%2019%20-%20applied%20AI/02.%20protein%20design.md): AlphaFold, protein structure prediction, inverse folding
+- [Drug Discovery](chapter%2019%20-%20applied%20AI/03.%20drug%20discovery.md): Molecular representations, virtual screening, binding affinity prediction
+- [Agentic Systems](chapter%2019%20-%20applied%20AI/04.%20agentic%20systems.md): AI agents, tool use, planning, multi-agent systems
+- [Healthcare](chapter%2019%20-%20applied%20AI/05.%20healthcare.md): Medical imaging, clinical NLP, drug safety, health monitoring
+
+### Chapter 20: Bleeding Edge AI
+- [Quantum Machine Learning](chapter%2020%20-%20bleeding%20edge%20AI/01.%20quantum%20machine%20learning.md): Qubits, quantum gates, variational circuits, quantum kernels
+- [Neuromorphic Computing](chapter%2020%20-%20bleeding%20edge%20AI/02.%20neuromorphic%20computing.md): Spiking neural networks, neuromorphic hardware, event-driven vision
+- [Datacentres in Space](chapter%2020%20-%20bleeding%20edge%20AI/03.%20datacentres%20in%20space.md): Orbital computing, latency, radiation, power constraints
+- [Decentralised AI](chapter%2020%20-%20bleeding%20edge%20AI/04.%20decentralised%20AI.md): Federated learning, blockchain ML, distributed training
+- [Brain Machine Interfaces](chapter%2020%20-%20bleeding%20edge%20AI/05.%20brain%20machine%20interfaces.md): Neural decoding, BCI architectures, neural signal processing
