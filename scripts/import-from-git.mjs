@@ -120,21 +120,25 @@ const customStyles = String.raw`:root > * {
 }
 
 .md-header {
-  background: linear-gradient(90deg, #0f766e 0%, #0f5f70 54%, #7c2d12 100%);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.16), 0 12px 28px rgba(15, 118, 110, 0.12);
+  background: linear-gradient(90deg, #2dd4bf 0%, #38bdf8 58%, #fbbf24 100%);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.24), 0 10px 24px rgba(14, 116, 144, 0.10);
+  color: #083344;
 }
 
 .md-tabs {
-  background: linear-gradient(90deg, #0b5f59 0%, #164e63 100%);
+  background: linear-gradient(90deg, #ccfbf1 0%, #e0f2fe 100%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  color: #164e63;
 }
 
-.md-tabs__link {
-  opacity: 0.82;
+.md-tabs .md-tabs__link {
+  color: inherit;
+  opacity: 0.74;
 }
 
-.md-tabs__link--active,
-.md-tabs__link:hover {
+.md-tabs .md-tabs__link--active,
+.md-tabs .md-tabs__link:hover {
+  color: #0f766e;
   opacity: 1;
 }
 
