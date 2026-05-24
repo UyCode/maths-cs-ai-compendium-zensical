@@ -117,7 +117,7 @@ wheels = [
 ]
 
 [[package]]
-name = "maths-cs-ai-compendium-zensical"
+name = "maths-cs-ai-compendium"
 version = "0.1.0"
 source = { virtual = "." }
 

@@ -1,7 +1,7 @@
 # Generated from HenryNdubuaku/maths-cs-ai-compendium.
 [project]
 site_name = "Maths, CS & AI Compendium"
-site_url = "https://uycode.github.io/maths-cs-ai-compendium-zensical/"
+site_url = "https://uycode.github.io/maths-cs-ai-compendium/"
 site_description = "An open, intuition-first textbook covering mathematics, computer science, and artificial intelligence from the ground up."
 site_author = "Henry Ndubuaku"
 docs_dir = "docs"

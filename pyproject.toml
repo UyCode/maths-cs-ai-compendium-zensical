@@ -1,5 +1,5 @@
 [project]
-name = "maths-cs-ai-compendium-zensical"
+name = "maths-cs-ai-compendium"
 version = "0.1.0"
 description = "Zensical conversion of HenryNdubuaku/maths-cs-ai-compendium"
 readme = "README.md"
